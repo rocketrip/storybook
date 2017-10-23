@@ -78,6 +78,13 @@ stories.add('as dynamic variables', () => {
 > import { storiesOf } from '@storybook/react-native';
 > import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 > ```
+>
+> In the case of Angular, use these imports:
+>
+> ```js
+> import { storiesOf } from '@storybook/angular';
+> import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/angular';
+> ```
 
 You can see your Knobs in a Storybook panel as shown below.
 
@@ -247,6 +254,18 @@ const value = date(label, defaultValue);
 ```
 
 > Note: the default value must not change - e.g., do not do `date('Label', new Date())` or `date('Label')`
+
+### button
+
+Allows you to include a button and associated handler.
+
+```js
+import { button } from '@storybook/addon-knobs';
+
+const label = 'Do Something';
+const handler = () => doSomething('foobar');
+button(label, handler);
+```
 
 ### withKnobs vs withKnobsOptions
 

@@ -52,7 +52,7 @@ storiesOf('Component', module)
     withInfo({
       text: 'String or React Element with docs about my component', // Warning! This option's name will be likely renamed to "summary" in 3.3 release. Follow this PR #1501 for details
       // other possible options see in Global options section below
-    )(() =>
+    })(() =>
       <Component>Click the "?" mark at top-right to view the info.</Component>
     )
   )
@@ -80,7 +80,7 @@ setDefaults({
   inline: true, // Displays info inline vs click button to view
   source: true, // Displays the source of story Component
   propTables: [/* Components used in story */], // displays Prop Tables with this components
-  propTablesExclude: [], // Exclude Components from being shoun in Prop Tables section
+  propTablesExclude: [], // Exclude Components from being shown in Prop Tables section
   styles: {}, // Overrides styles of addon
   marksyConf: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
   maxPropsIntoLine: 1, // Max props to display per line in source code
