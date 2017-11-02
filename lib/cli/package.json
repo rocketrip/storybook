@@ -22,9 +22,7 @@
   },
   "scripts": {
     "test-latest-cra": "cd test && ./test_latest_cra.sh",
-    "posttest-latest-cra": "yarn posttest",
-    "test": "cd test && ./run_tests.sh",
-    "posttest": "rm -rfd test/run"
+    "test": "cd test && ./run_tests.sh"
   },
   "dependencies": {
     "@storybook/codemod": "^3.3.0-alpha.2",
@@ -32,7 +30,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
-    "chalk": "^2.2.0",
+    "chalk": "^2.3.0",
     "child-process-promise": "^2.2.1",
     "commander": "^2.11.0",
     "cross-spawn": "^5.0.1",
